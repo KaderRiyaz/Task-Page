@@ -4,53 +4,38 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>BOGO</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/styles.css'>
-    <script src='main.js'></script>
 </head>
 
 <body>
     <div class="main-container">
+        <!-- <script src="scripts/scripts.js"></script> Link to external JS -->
         <div class="header">
             <div class="line-style"></div>
             <div><span class="header-content">YAY! It's BOGO</span></div>
             <div class="line-style"></div>
         </div>
-        <div class="card-container">
-            <div class="card-content">
-                <div class="card-header">
-                    <div class="card-header-label">
-                        <input type="radio" name="2 Unit" value="2 Unit" />
-                        <label for="2 Unit" class="label">2 Unit</label>
-                        <label for="2 Unit" class="offer-label">20% Off</label>
-                    </div>
-                    <div class="popular-tag">MOST POPULAR</div>
-                    <div class="card-header-label">
-                        <span class="top-value">$18.00 USD</span><br>
-                        <span class="stashed-value">$24.40 USD</span>
-                    </div>
-                </div>
-                <div>
-                    <label>Size</label>
-                    <label>Colour</label>
-                </div>
-                <div>
-                    <label>#1</label>
-                    <select>
-                        <option value="small">S</option>
-                        <option value="medium">M</option>
-                        <option value="large">L</option>
-                    </select>
-                    <select>
-                        <option value="small">Black</option>
-                        <option value="medium">Colour</option>
-                        <option value="large">White</option>
-                    </select>
-                </div>
+        <div id="cards-container"></div>
+        <div class="footer">
+            <div class="footer-content">
+                <span class="span-free-delivery">Free Delivery</span>
+            </div>
+            <div class="footer-content">
+                <span class="span-price">Total : $18.00 USD</span>
             </div>
         </div>
+        <div class="button-div">
+            <button type="button" class="add-button" onclick="checkout()">
+                +  Add to Cart
+            </button>
+        </div>
+        <div class="button-div">
+            <span class="powered-by">@ Powered by Pumper </span>
+        </div>
     </div>
+    <script src='scripts/scripts.js'></script>
 </body>
 
 </html>
